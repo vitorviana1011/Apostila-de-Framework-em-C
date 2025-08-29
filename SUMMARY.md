@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Developer Platform](README.md)
+* [Apostila de Raylib](README.md)
 * [Instalacao](instalacao/README.md)
   * [Instalacao Linux](instalacao/instalacao-linux.md)
   * [Instalacao Windows](instalacao/instalacao-windows.md)
