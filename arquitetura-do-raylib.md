@@ -25,6 +25,8 @@ E mesmo a Raylib sendo constituída de vários blocos, todos eles são unificado
 
 Com isso, vamos destrinchar cada módulo dessa ferramenta.
 
+<figure><img src=".gitbook/assets/raylib_architecture_v5.5.png" alt=""><figcaption></figcaption></figure>
+
 ### 1. `rcore` - O Núcleo
 
 O `rcore` funciona como o cérebro de toda a operação da Raylib. Ele é quem gerencia as janelas, os eventos do sistema, as entradas do usuário (teclado, mouse, gamepad) e o loop principal do jogo.
