@@ -10,9 +10,9 @@ layout:
   outline:
     visible: true
   pagination:
-    visible: true
-  metadata:
     visible: false
+  metadata:
+    visible: true
 ---
 
 # Instalacao

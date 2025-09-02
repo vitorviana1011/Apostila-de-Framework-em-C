@@ -3,6 +3,20 @@ description: >-
   Este tutorial mostra como instalar a Raylib em um ambiente Linux (baseado em
   Debian/Ubuntu) compilando-a diretamente do código-fonte. Isso garante que você
   tenha a versão mais recente e um controle to
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
 ---
 
 # Instalacao Linux

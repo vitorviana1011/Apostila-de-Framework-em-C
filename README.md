@@ -12,7 +12,7 @@ layout:
   pagination:
     visible: false
   metadata:
-    visible: false
+    visible: true
 ---
 
 # Apostila de Raylib
