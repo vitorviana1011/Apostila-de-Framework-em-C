@@ -8,3 +8,4 @@
 ## Group 1
 
 * [Tutorial 1 - Criando uma janela.](group-1/tutorial-1-criando-uma-janela..md)
+* [Tutorial 2 - Aprofundando no Texto](group-1/tutorial-2-aprofundando-no-texto.md)

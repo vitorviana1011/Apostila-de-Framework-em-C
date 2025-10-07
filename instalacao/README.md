@@ -41,7 +41,18 @@ Para este projeto, é necessário ter um compilador C, como o MinGW-w64, instala
 
 Caso nao tenho o compilador instalado segue um tutorial de intalacao:
 
-[https://youtu.be/ZMoBHin\_QOg](https://youtu.be/ZMoBHin_QOg)
+{% embed url="https://youtu.be/ZMoBHin_QOg" %}
+
+***
+
+**Passo 2: Baixar o Projeto Base**
+
+Vamos clonar o repositório Git que contém nosso template de projeto.
+
+```
+git clone https://github.com/murielgodoi/raylibGames.git
+cd raylibGames
+```
 
 ***
 
