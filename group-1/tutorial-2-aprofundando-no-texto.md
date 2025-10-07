@@ -8,7 +8,7 @@ Agora voce sabe como abrir uma janela e escrever um texto. Nessa secao vamos apr
 
 ### Deixando a sua cara - Trocando a fonte
 
-Crie uma pasta chamada `recursos` ao lado do seu arquivo `.c` e coloque um arquivo de fonte (`.ttf` ou `.otf`) dentro dela. Para este exemplo, vou assumir que o nome do arquivo é `alagard.ttf` (uma fonte pixel art popular e gratuita).
+Crie uma pasta chamada `recursos` ao lado do seu arquivo `.c` e coloque um arquivo de fonte (`.ttf` ou `.otf`) dentro dela. Para este exemplo, vou assumir que o nome do arquivo é arial`.ttf` (uma fonte classica, presente em todos os lugares).
 
 Vamos começar com a estrutura básica: criar a janela e carregar nossa fonte. Por enquanto, só vamos escrever um título no canto da tela.
 
@@ -34,7 +34,7 @@ int main(void)
             ClearBackground(DARKBLUE); // Um fundo azul escuro para dar clima
 
             // Desenhando o título com a nova fonte
-            DrawTextEx(customFont, "DUNGEON ESCAPE", (Vector2){ 20, 20 }, 60, 2, WHITE);
+            DrawTextEx(customFont, "Texto em Arial!", (Vector2){ 20, 20 }, 60, 2, WHITE);
 
         EndDrawing();
     }
@@ -65,7 +65,7 @@ Uma janela com o fundo azul e nosso texto em branco, e o principal, com fonte Ar
 
 ### Texto em Tempo Real - Informacao Dinamica
 
-Um jogo precisa mostrar informações que se atualizam, como a pontuação. Para isso, vamos misturar texto com o valor de variáveis.
+As vezes um programa precisa mostrar informações que se atualizam, como uma pontuação. Para isso, vamos misturar texto com o valor de variáveis.
 
 Primeiro, prepare as variáveis (antes do loop `while`):
 
@@ -81,6 +81,8 @@ Agora, a lógica e o desenho (dentro do loop `while`):
 Vamos adicionar a lógica para aumentar o placar em intervalos regulares e o comando para desenhar esse valor na tela.
 
 ```
+#include <time.h> // Nova biblioteca para usar a funcao GetTime
+
 // Lógica de atualização (colocar antes de BeginDrawing)
 if (GetTime() - lastUpdateTime >= 1.0)
 {
@@ -114,7 +116,7 @@ A Ferramenta Essencial: `MeasureTextEx()`
 Para alinhar algo, primeiro precisamos saber seu tamanho. Adicione esta linha antes do loop `while`:
 
 ```
-const char *titleText = "UM TITULO BACANA";
+const char *titleText = "Texto em Arial!;
 Vector2 titleSize = MeasureTextEx(customFont, titleText, 60, 2);
 ```
 
@@ -135,7 +137,7 @@ DrawTextEx(customFont, titleText, (Vector2){ titlePosX, 60 }, 60, 2, WHITE);
 // 2. Desenhamos o placar no rodapé esquerdo
 DrawText(TextFormat("SCORE: %05i", score), 20, GetScreenHeight() - 40, 30, GOLD);
 
-// 3. BÔNUS: Desenhamos um texto alinhado à direita
+// 3. Desenhamos um texto alinhado à direita
 const char *highScoreText = "High Score: 12500";
 float highScoreTextWidth = MeasureText(highScoreText, 20);
 DrawText(highScoreText, GetScreenWidth() - highScoreTextWidth - 20, 20, 20, LIGHTGRAY);
