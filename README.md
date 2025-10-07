@@ -31,7 +31,7 @@ Esta apostila foi pensada como uma trilha de aprendizagem progressiva, levando v
 2. **O Tutorial Prático:** Em seguida, mergulharemos no código com um tutorial passo a passo, onde você aprenderá a criar janelas, desenhar formas, usar texturas, tocar sons e capturar entradas do teclado.
 3. **O Projeto Final:** Para consolidar todo o conhecimento, aplicaremos o que aprendemos em um projeto divertido e completo: **Caça ao Tesouro.**
 
-Para visualizar a estrutura completa de todos os tópicos que abordaremos, consulte nosso Mapa de Aprendizagem.
+Para visualizar a estrutura completa de todos os tópicos que abordaremos, consulte nosso [Trilha de Aprendizagem.](trilha-de-aprendizagem.md)
 
 ***
 
