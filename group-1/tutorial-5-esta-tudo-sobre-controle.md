@@ -230,6 +230,8 @@ int main(){
 }
 ```
 
+<figure><img src="../.gitbook/assets/Design sem nome(2).gif" alt=""><figcaption></figcaption></figure>
+
 #### Hora de Experimentar!
 
 * Mude o valor de `playerSpeed` para `1.0f` ou `10.0f` e veja como a "sensibilidade" do movimento muda.
