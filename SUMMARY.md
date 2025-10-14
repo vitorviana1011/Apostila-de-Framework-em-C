@@ -12,3 +12,4 @@
 * [Tutorial 3 - Formas Simples](group-1/tutorial-3-formas-simples.md)
 * [Tutorial 4 - Movendo e Colidindo](group-1/tutorial-4-movendo-e-colidindo.md)
 * [Tutorial 5 - Esta Tudo Sobre Controle](group-1/tutorial-5-esta-tudo-sobre-controle.md)
+* [Tutorial 6 - Pintando o Sete](group-1/tutorial-6-pintando-o-sete.md)
