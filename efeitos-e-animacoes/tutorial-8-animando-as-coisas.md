@@ -191,6 +191,8 @@ int main(void)
 }
 ```
 
+<figure><img src="../.gitbook/assets/Design sem nome(5).gif" alt=""><figcaption></figcaption></figure>
+
 #### Hora de Experimentar
 
 * Mude o `frameSpeed` para `0.05f` ou `0.2f` e veja como a velocidade da animação muda.
