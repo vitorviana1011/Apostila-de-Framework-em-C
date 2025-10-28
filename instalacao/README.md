@@ -15,7 +15,7 @@ layout:
     visible: true
 ---
 
-# Instalacao
+# Instalação
 
 #### Guia de Instalação Simplificado
 
@@ -39,9 +39,11 @@ sudo apt-get install libasound2-dev libx11-dev libxrandr-dev libxi-dev libgl1-me
 
 Para este projeto, é necessário ter um compilador C, como o MinGW-w64, instalado e configurado no PATH do sistema. Se você consegue usar o comando `gcc` no seu terminal, está tudo pronto.
 
-Caso nao tenho o compilador instalado segue um tutorial de intalacao:
+Caso nao tenho o compilador instalado segue um tutorial de intalacao,  utilize o compilador MinGW-w64 (64 bits)
 
-{% embed url="https://youtu.be/ZMoBHin_QOg" %}
+```
+https://github.com/skeeto/w64devkit/releases/download/v2.0.0/w64devkit-x64-2.0.0.exe
+```
 
 ***
 
@@ -104,4 +106,4 @@ No Windows:
 gcc seu_jogo.c -o seu_jogo.exe -lraylib -lopengl32 -lgdi32 -lwinmm
 ```
 
-Observação: Ao compilar manualmente, pode ser necessário adicionar flags para indicar a localização dos arquivos da Raylib, como `-I./src` e `-L./src`, dependendo da estrutura do projeto do seu professor. O método com `make` é sempre o recomendado.
+Observação: Ao compilar manualmente, pode ser necessário adicionar flags para indicar a localização dos arquivos da Raylib, como `-I./src` e `-L./src`, dependendo da estrutura do projeto. O método com `make` é sempre o recomendado.
