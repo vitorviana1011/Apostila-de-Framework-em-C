@@ -22,7 +22,8 @@ layout:
 
 Todo programa Raylib segue uma estrutura muito parecida. Vamos começar com o código mínimo necessário para criar uma janela e mantê-la aberta.
 
-```
+````
+```c
 #include "raylib.h" // Adiciona a biblioteca raylib ao codigo
 int main(){
     // Configuracao
@@ -41,7 +42,7 @@ int main(){
     CloseWindow(); // Fecha a janela
     return 0;
 }
-```
+````
 
 Vamos destrinchar o codigo parte por parte:
 
