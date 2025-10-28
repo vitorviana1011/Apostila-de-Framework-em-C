@@ -1,3 +1,20 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+---
+
 # Tutorial 5 - Esta Tudo Sobre Controle
 
 Por enquanto fizemos apenas movimentos automaticos em nossas figuras, nesse tutorial quem vai assumir o comando 'e a gente. Mas tambem., todo bom heroi precisa de um nome. Entao vamos dar um nome e controlar nosso figura/personagem nesse tutorial.
@@ -10,7 +27,7 @@ Para fazer isso, vamos separar nosso programa em duas "telas" ou estados: uma pa
 
 Para gerenciar os estados, primeiro precisamos defini-los. A melhor forma de fazer isso em C é com um `enum`. Adicionalmente, precisaremos de variáveis para armazenar o nome que está sendo digitado.
 
-```
+```c
 // --- Inicialização ---
 // ...
 
@@ -47,7 +64,7 @@ Agora, a grande mudança. O Bloco de **L'ogica** precisa saber qual lógica exec
 
 Substitua seu Bloco de Atualização por esta estrutura:
 
-```
+```c
 // --- Lógica ---
 switch(currentScreen)
 {
@@ -70,7 +87,7 @@ Agora, vamos preencher a lógica de cada estado:
 * `case STATE_TYPING_NAME`:
   * Vamos capturar as teclas, adicionar letras ao nosso `name` e verificar se o jogador pressionou `ENTER` para finalizar.
 
-```
+```c
 // Dentro de 'case STATE_TYPING_NAME:'
 int key = GetCharPressed(); // Captura a última tecla pressionada como um caractere
 
@@ -99,7 +116,7 @@ if (IsKeyPressed(KEY_ENTER)){
 
 * Agora vem a parte principal. Precisamos "escutar" o teclado a cada frame e, se uma tecla de movimento estiver pressionada, devemos atualizar a `playerPosition`. Toda essa lógica pertence exclusivamente ao Bloco de **Logica**. Adicione o seguinte código dentro do seu Bloco:
 
-```
+```c
 // Dentro de 'case STATE_GAMEPLAY:'
 if (IsKeyDown(KEY_RIGHT) || IsKeyDown(KEY_D)) playerPosition.x += playerSpeed;
 if (IsKeyDown(KEY_LEFT) || IsKeyDown(KEY_A)) playerPosition.x -= playerSpeed;
@@ -121,7 +138,7 @@ O Bloco de Desenho também precisa saber o que desenhar: a tela de digitação o
 
 Substitua seu Bloco de Desenho por esta estrutura:
 
-```
+```c
 // --- Desenho ---
     switch(currentScreen){
         case STATE_TYPING_NAME:{
@@ -150,7 +167,7 @@ EndDrawing();
 
 ### Codigo Final e Resultados
 
-```
+```c
 #include "raylib.h"
 
 typedef enum {

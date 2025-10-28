@@ -1,3 +1,20 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+---
+
 # Tutorial 8 -Animando as Coisas
 
 Até agora, quando usamos uma textura, desenhamos a imagem inteira. Mas e se nossa imagem contiver várias pequenas imagens (chamadas de sprites) que representam os diferentes quadros de uma animação, ou até mesmo vários objetos diferentes do jogo?
@@ -21,7 +38,7 @@ Encontre uma folha de sprite simples para um personagem, idealmente com quadros 
 
 No nosso Bloco de **Inicialização**, vamos carregar a folha de sprite e criar variáveis para controlar qual quadro de animação está sendo exibido.
 
-```
+```c
 // --- Inicialização ---
 // Configuração da Janela
 const int screenWidth = 800;
@@ -58,7 +75,7 @@ Vamos entender as novas variáveis:
 
 A cada frame, precisamos atualizar o `frameTime` e decidir se é hora de avançar para o próximo quadro da animação. Esta lógica vai no Bloco de **Lógica**.
 
-```
+```c
 // --- Lógica ---
 // Lógica da Animação
 frameTime += GetFrameTime(); // Acumula o tempo que o último frame levou para ser desenhado
@@ -91,7 +108,7 @@ Vamos analisar a lógica da animação:
 
 Agora a parte mais importante: dizer à `DrawTexturePro()` qual parte da `playerSheet` ela deve desenhar. É aqui que o `sourceRec` se torna dinâmico.
 
-<pre><code>// --- Desenho ---
+<pre class="language-c"><code class="lang-c">// --- Desenho ---
 <strong>BeginDrawing();
 </strong><strong>    ClearBackground(RAYWHITE);
 </strong>
@@ -123,7 +140,7 @@ Vamos focar no `sourceRec` alterado:
 
 Não esqueça de liberar a textura quando o jogo terminar.
 
-<pre><code>// --- Limpeza --- 
+<pre class="language-c"><code class="lang-c">// --- Limpeza --- 
 // (Depois do Loop)
 <strong>UnloadTexture(playerSheet); // Libera a folha de sprite da memória
 </strong>CloseWindow();
@@ -131,7 +148,7 @@ Não esqueça de liberar a textura quando o jogo terminar.
 
 ### Código Final
 
-```
+```c
 #include "raylib.h"
 
 int main(void)

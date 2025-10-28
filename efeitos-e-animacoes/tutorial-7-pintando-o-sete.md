@@ -1,4 +1,21 @@
-# Tutorial 6 - Pintando o Sete
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+---
+
+# Tutorial 7 - Pintando o Sete
 
 Nesta seção, vamos aprender a "pintar" nossos objetos usando uma imagem, um processo conhecido como mapeamento de textura.
 
@@ -16,7 +33,7 @@ Pense nisso como aplicar um papel de parede a uma forma geométrica. A imagem qu
 
 Assim como as fontes, as texturas vivem em arquivos no disco e precisam ser carregadas para a memória da placa de vídeo (GPU) para serem usadas. Esta operação, que pode ser um pouco lenta, acontece uma única vez, no nosso Bloco de **Inicializacao**.
 
-```
+```c
 // --- Inicialização ---
 // Configuração da Janela
 const int screenWidth = 800;
@@ -43,7 +60,7 @@ Vamos entender as novidades:
 
 Com nossa "tinta" (textura) pronta, podemos aplicá-la ao nosso objeto a cada frame. Para isso, vamos ao Bloco de Desenho e substituímos a antiga chamada `DrawRectangle()` (Ou qualuer outra figura) pela função `DrawTexture()`.
 
-```
+```c
 // --- Desenho ---
 BeginDrawing();
     ClearBackground(RAYWHITE);
@@ -66,7 +83,7 @@ Vamos detalhar os parâmetros da função `DrawTexture()`:
 
 Todo recurso que carregamos deve ser liberado ao final do programa. Isso é crucial para a boa saúde do seu aplicativo.
 
-```
+```c
 // --- Limpeza ---
 UnloadTexture(playerTexture); // Libera a textura da memória da GPU
 CloseWindow();
@@ -78,7 +95,7 @@ CloseWindow();
 
 ### Codigo Completo e Resultado
 
-```
+```c
 #include "raylib.h"
 
 int main(){

@@ -1,3 +1,20 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+---
+
 # Tutorial 3 - Formas Simples
 
 Nesta seção, vamos aprender a usar as funções do módulo `rshapes` para criar e colorir as formas geométricas básicas. Cada uma delas funciona de uma maneira um pouco diferente, e entender seus parâmetros é a chave para desenhar qualquer coisa que você imaginar. Todo o código que escreveremos a seguir pertence ao Bloco de Desenho, entre as funções `BeginDrawing()` e `EndDrawing()`.
@@ -6,7 +23,7 @@ Nesta seção, vamos aprender a usar as funções do módulo `rshapes` para cria
 
 ### Passo 1 - Retangulo
 
-```
+```c
 DrawRectangle(50, 70, 100, 60, BLUE);
 ```
 
@@ -24,7 +41,7 @@ Vamos entender cada um dos seus 5 parâmetros:
 
 Diferente do retângulo, o círculo não é definido por um canto, mas sim pelo seu centro e pela distância até sua borda.
 
-```
+```c
 DrawCircle(GetScreenWidth() / 2, GetScreenHeight() / 2, 50, MAROON);
 ```
 
@@ -41,7 +58,7 @@ Analisando os 4 parâmetros:
 
 O triângulo é a forma mais fundamental da computação gráfica. Ele é definido pelas coordenadas exatas do seus tres vertices.
 
-```
+```c
 DrawTriangle((Vector2){400, 350}, (Vector2){300, 400}, (Vector2){500, 400}, GREEN);
 ```
 
@@ -58,7 +75,7 @@ Analisando os 4 parâmetros:
 
 Para desenhar uma linha, precisamos apenas de um ponto inicial e um ponto final.
 
-```
+```c
 DrawLineEx((Vector2){550, 50}, (Vector2){750, 400}, 4.0f, GOLD);
 ```
 
@@ -73,7 +90,7 @@ Analisando os 4 parâmetros:
 
 ### Codigo Final
 
-```
+```c
 #include "raylib.h"
 
 int main()

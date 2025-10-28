@@ -1,3 +1,20 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+---
+
 # Tutorial 6 - Jogo do Clique
 
 Bem-vindo ao nosso primeiro minijogo! Vamos criar um "treinador de mira" simples, onde um alvo (uma bolinha) aparece em locais aleatórios na tela. O objetivo é clicar nele o mais rápido possível para ganhar pontos.
@@ -15,7 +32,7 @@ Este tutorial vai nos ensinar a:
 
 Como sempre, começamos no Bloco de **Inicialização** para configurar nossas variáveis. Precisamos de um círculo para ser o alvo e uma variável para guardar a pontuação.
 
-```
+```c
 // --- Inicialização
 const int screenWidth = 800;
 const int screenHeight = 450;
@@ -42,7 +59,7 @@ Vamos entender as variáveis:
 
 No Bloco de **Desenho**, vamos renderizar nosso alvo (um círculo vermelho) e a pontuação.
 
-```
+```c
 // --- Bloco de Desenho ---
 BeginDrawing();
     ClearBackground(RAYWHITE);
@@ -70,7 +87,7 @@ Agora, o coração do jogo. No Bloco de **Lógica**, precisamos verificar duas c
 
 Adicione o seguinte código ao seu Bloco de Atualização:
 
-```
+```c
 // --- Lógica ---
 
 // Verifica se o botão esquerdo do mouse foi pressionado NESTE frame
@@ -108,7 +125,7 @@ Vamos dissecar essa lógica:
 
 ### Código Final e Resultado
 
-```
+```c
 #include "raylib.h"
 
 int main(){

@@ -1,3 +1,20 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+---
+
 # Tutorial 4 - Movendo e Colidindo
 
 Vamos dar um passo além das formas estáticas. Vamos criar um objeto que se move sozinho e ensiná-lo a interagir com o ambiente, primeiro ricocheteando nas paredes e depois detectando a presença de outros objetos.
@@ -12,7 +29,7 @@ Nosso primeiro objetivo é fazer um circulo se mover de um lado para o outro da 
 
 Antes de qualquer coisa, temos que declarar as variaveis que vamos usar. A partir de agora, conforme nossos programas crescem em tamanho vamos separa-los em blocos, esse primeiro bloco sera o bloco de **Inicializacao,** que acontece antes do nosso loop principa&#x6C;**.**
 
-```
+```c
 // --- Inicializacao ---
 // Configuração da Janela
 const int screenWidth = 800;
@@ -34,7 +51,7 @@ Vamos analisar as novidades:
 
 Fazer o bloco se mover sozinho e bem simples: a cada frame, simplesmente aplicamos a velocidade à posição. Esse passo vai ficar em um bloco dentro do nosso loop principal chamado **Atualizacao da L'ogica.**
 
-```
+```c
 // --- Atualização da Lógica ---
 boxPosition.x += boxSpeed.x; // Movimento da Caixa
 ```
@@ -45,7 +62,7 @@ boxPosition.x += boxSpeed.x; // Movimento da Caixa
 
 O Bloco de **Desenho** apenas desenha a caixa na sua nova posição, que foi calculada no Bloco de Atualização.
 
-```
+```c
 // --- Desenho ---
 BeginDrawing();
             ClearBackground(RAYWHITE);
@@ -63,7 +80,7 @@ Com isso voce vai ter algo assim:
 
 Do jeito que esta, nossa figura segue em velocidade constante para a direita ate o infinito, saindo da tela. Vamos contornar isso adicionando uma colisao com a borda da janela.
 
-```
+```c
 // --- Lógica ---
 // ...
 
@@ -89,7 +106,7 @@ Agora, vamos adicionar um obstáculo estático e detectar quando nossa caixa em 
 
 #### Preparando as Variaveis
 
-```
+```c
 // --- Inicialização ---
 //...
 
@@ -100,7 +117,7 @@ bool collision = false;
 
 #### Logica da Colisao
 
-```
+```c
 // --- Lógica ---
 //...
         
@@ -120,7 +137,7 @@ if (CheckCollisionRecs(boxRec, obstacleRec)){
 
 Vamos usar a flag `collision` para mudar a cor da nossa caixa móvel.
 
-```
+```c
 // --- Desenho ---
 BeginDrawing();
     ClearBackground(RAYWHITE);
@@ -143,7 +160,7 @@ Agora, a cor da nossa caixa principal depende do estado da flag `collision`, dan
 
 ### Codigo Final
 
-```
+```c
 #include "raylib.h"
 
 int main(){

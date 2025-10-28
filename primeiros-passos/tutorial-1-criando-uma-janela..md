@@ -1,11 +1,10 @@
 ---
-description: Nesse tutorial, voce vai aprender a criar uma janela e escrever nela.
 layout:
   width: wide
   title:
     visible: true
   description:
-    visible: true
+    visible: false
   tableOfContents:
     visible: true
   outline:
@@ -18,11 +17,12 @@ layout:
 
 # Tutorial 1 - Criando uma janela.
 
+Nesse tutorial, voce vai aprender a criar uma janela e escrever nela.
+
 ### Criando a janela
 
 Todo programa Raylib segue uma estrutura muito parecida. Vamos começar com o código mínimo necessário para criar uma janela e mantê-la aberta.
 
-````
 ```c
 #include "raylib.h" // Adiciona a biblioteca raylib ao codigo
 int main(){
@@ -42,7 +42,7 @@ int main(){
     CloseWindow(); // Fecha a janela
     return 0;
 }
-````
+```
 
 Vamos destrinchar o codigo parte por parte:
 
@@ -72,7 +72,7 @@ Vamos adicionar um texto.
 
 Primeiro, prepare as variáveis (antes do loop `while`):
 
-```
+```c
 // ... depois de SetTargetFPS(60);
 
 // Variáveis para o nosso texto
@@ -85,7 +85,7 @@ Vector2 textPosition = { 250, 200 }; // Posição X e Y na tela
 
 Agora, vamos desenhar (dentro do loop `while`):
 
-```
+```c
 BeginDrawing(); // Inicializa o desenho
 ClearBackground(RAYWHITE); // Pinta o fundo de branco
 Color textColor = BLACK; // Define a cor preto para o texto 
@@ -101,7 +101,7 @@ EndDrawing(); // Termina o desenho da janela
 
 Com tudo isso, seu codigo deve ficar assim:
 
-```
+```c
 #include "raylib.h"
 
 int main() {

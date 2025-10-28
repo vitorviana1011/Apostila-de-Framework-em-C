@@ -1,3 +1,20 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+---
+
 # Tutorial 2 - Aprofundando no Texto
 
 ### Introducao
@@ -12,7 +29,7 @@ Crie uma pasta chamada `recursos` ao lado do seu arquivo `.c` e coloque um arqui
 
 Vamos começar com a estrutura básica: criar a janela e carregar nossa fonte. Por enquanto, só vamos escrever um título no canto da tela.
 
-```
+```c
 #include "raylib.h"
 
 int main(void)
@@ -71,7 +88,7 @@ Primeiro, prepare as variáveis (antes do loop `while`):
 
 Precisamos de uma variável para guardar o placar e outra para nos ajudar a controlar o tempo.
 
-```
+```c
 int score = 0;
 double lastUpdateTime = 0.0;
 ```
@@ -80,7 +97,7 @@ Agora, a lógica e o desenho (dentro do loop `while`):
 
 Vamos adicionar a lógica para aumentar o placar em intervalos regulares e o comando para desenhar esse valor na tela.
 
-```
+```c
 #include <time.h> // Nova biblioteca para usar a funcao GetTime
 
 // Lógica de atualização (colocar antes de BeginDrawing)
@@ -115,7 +132,7 @@ A Ferramenta Essencial: `MeasureTextEx()`
 
 Para alinhar algo, primeiro precisamos saber seu tamanho. Adicione esta linha antes do loop `while`:
 
-```
+```c
 const char *titleText = "Texto em Arial!;
 Vector2 titleSize = MeasureTextEx(customFont, titleText, 60, 2);
 ```
@@ -127,7 +144,7 @@ Vector2 titleSize = MeasureTextEx(customFont, titleText, 60, 2);
 
 Agora, dentro do loop, vamos usar essa medida para calcular a posição e desenhar. Substitua o `DrawTextEx` do título e adicione os outros textos:
 
-```
+```c
 // Cálculo e desenho (dentro de BeginDrawing/EndDrawing)
 
 // 1. Calculamos a posição X do título para centralizá-lo
@@ -157,7 +174,7 @@ Agora, centralizamos nosso texto principal no centro da janela, no canto inferio
 
 Juntando todas as partes, seu programa completo ficará assim:
 
-```
+```c
 #include "raylib.h"
 #include <time.h>
 
