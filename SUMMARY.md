@@ -21,3 +21,4 @@
 
 * [Tutorial 7 - Pintando o Sete](efeitos-e-animacoes/tutorial-7-pintando-o-sete.md)
 * [Tutorial 8 -Animando as Coisas](efeitos-e-animacoes/tutorial-8-animando-as-coisas.md)
+* [Tutorial 9 - Um Lugar Silencioso](efeitos-e-animacoes/tutorial-9-um-lugar-silencioso.md)
