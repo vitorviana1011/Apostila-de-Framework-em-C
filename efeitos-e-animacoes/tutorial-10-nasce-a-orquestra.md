@@ -89,7 +89,7 @@ CloseWindow();
 
 ### Código Final
 
-```
+```c
 #include "raylib.h"
 
 int main(){
