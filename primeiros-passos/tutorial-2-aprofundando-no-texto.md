@@ -17,13 +17,13 @@ layout:
 
 # Tutorial 2 - Aprofundando no Texto
 
-### Introducao
+### Introdução
 
-Agora voce sabe como abrir uma janela e escrever um texto. Nessa secao vamos aprofundar um pouco nessa segunda parte: escrever um texto
+Agora você sabe como abrir uma janela e escrever um texto. Nessa seção vamos aprofundar um pouco nessa segunda parte: escrever um texto.
 
 ***
 
-### Deixando a sua cara - Trocando a fonte
+### 1. Deixando a sua cara - Trocando a fonte
 
 Crie uma pasta chamada `recursos` ao lado do seu arquivo `.c` e coloque um arquivo de fonte (`.ttf` ou `.otf`) dentro dela. Para este exemplo, vou assumir que o nome do arquivo é arial`.ttf` (uma fonte classica, presente em todos os lugares).
 
@@ -80,7 +80,7 @@ Uma janela com o fundo azul e nosso texto em branco, e o principal, com fonte Ar
 
 ***
 
-### Texto em Tempo Real - Informacao Dinamica
+### 2. Texto em Tempo Real - Informacao Dinamica
 
 As vezes um programa precisa mostrar informações que se atualizam, como uma pontuação. Para isso, vamos misturar texto com o valor de variáveis.
 
@@ -120,11 +120,11 @@ Com isso possuimos uma janela assim:
 
 <figure><img src="../.gitbook/assets/Captura de tela de 2025-10-07 14-06-27.png" alt=""><figcaption></figcaption></figure>
 
-Temos a mesma janela do exemplo anterior, porem agora, logo abaixo, temos um placar dinamica, ou seja, atualiza seu valor a cada segundo que passada.
+Temos a mesma janela do exemplo anterior, porém agora, logo abaixo, temos um placar dinâmica, ou seja, atualizar seu valor a cada segundo que passada.
 
 ***
 
-### Alinhamento Perfeito e Toques Finais
+### 3. Alinhamento Perfeito e Toques Finais
 
 Até agora, posicionamos os textos "no olho". Para uma interface profissional, precisamos de precisão matemática.
 
@@ -133,7 +133,7 @@ A Ferramenta Essencial: `MeasureTextEx()`
 Para alinhar algo, primeiro precisamos saber seu tamanho. Adicione esta linha antes do loop `while`:
 
 ```c
-const char *titleText = "Texto em Arial!;
+const char *titleText = "Texto em Arial!";
 Vector2 titleSize = MeasureTextEx(customFont, titleText, 60, 2);
 ```
 
@@ -170,7 +170,7 @@ Agora, centralizamos nosso texto principal no centro da janela, no canto inferio
 
 ***
 
-**Código Final e Resultado**
+### Código Final
 
 Juntando todas as partes, seu programa completo ficará assim:
 
@@ -233,7 +233,7 @@ int main(void)
 }
 ```
 
-### Hora de Experimentar!
+#### Hora de Experimentar
 
 Agora que você tem essas novas ferramentas, o desafio é seu! Tente modificar o código para:
 

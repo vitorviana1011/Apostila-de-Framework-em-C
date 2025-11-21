@@ -39,13 +39,18 @@ sudo apt-get install libasound2-dev libx11-dev libxrandr-dev libxi-dev libgl1-me
 
 Para este projeto, é necessário ter um compilador C, como o MinGW-w64, instalado e configurado no PATH do sistema. Se você consegue usar o comando `gcc` no seu terminal, está tudo pronto.
 
-Caso nao tenho o compilador instalado segue um tutorial de intalacao,  utilize o compilador MinGW-w64 (64 bits)
+Caso não tenho o compilador instalado ou tenha a versão de 32 bits, segue um tutorial de intalacao,  utilize o compilador MinGW-w64 (64 bits):
+
+1. Acesse o link abaixo para instalar o executavel do compilador:
 
 ```
 https://github.com/skeeto/w64devkit/releases/download/v2.0.0/w64devkit-x64-2.0.0.exe
 ```
 
-***
+2. Execute o arquivo baixado, e instala na pasta desejavel, recomenda-se a pasta de `C://`&#x20;
+3. Acesse as variaveis de ambiente do seu sistema e, no caminho do path, adicione o caminho do compialdor que acabou de instalar. **Importante:** Caso você já tenha o compilador 32 bits instalado, removea-o do path.
+
+
 
 **Passo 2: Baixar o Projeto Base**
 

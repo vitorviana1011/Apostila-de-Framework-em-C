@@ -17,13 +17,15 @@ layout:
 
 # Tutorial 8 -Animando as Coisas
 
+### Introdução
+
 Até agora, quando usamos uma textura, desenhamos a imagem inteira. Mas e se nossa imagem contiver várias pequenas imagens (chamadas de sprites) que representam os diferentes quadros de uma animação, ou até mesmo vários objetos diferentes do jogo?
 
 Isso é chamado de Folha de Sprite (Sprite Sheet). Ela otimiza o uso de memória e torna o gerenciamento de assets mais eficiente. Neste tutorial, vamos aprender a "recortar" e animar um personagem usando uma folha de sprite.
 
 ***
 
-### Antes do Código
+### 1. Antes do Código
 
 Encontre uma folha de sprite simples para um personagem, idealmente com quadros de animação de tamanho fixo (ex: 32x32 pixels, 64x64 pixels).
 
@@ -34,7 +36,7 @@ Encontre uma folha de sprite simples para um personagem, idealmente com quadros 
 
 ***
 
-### Carregando o Arquivo e Definindo a Animação
+### 2. Carregando o Arquivo e Definindo a Animação
 
 No nosso Bloco de **Inicialização**, vamos carregar a folha de sprite e criar variáveis para controlar qual quadro de animação está sendo exibido.
 
@@ -71,7 +73,7 @@ Vamos entender as novas variáveis:
 
 ***
 
-### Lógica da Animação
+### 3. Lógica da Animação
 
 A cada frame, precisamos atualizar o `frameTime` e decidir se é hora de avançar para o próximo quadro da animação. Esta lógica vai no Bloco de **Lógica**.
 
@@ -104,7 +106,7 @@ Vamos analisar a lógica da animação:
 
 ***
 
-### Desenhando o Sprite
+### 4. Desenhando o Sprite
 
 Agora a parte mais importante: dizer à `DrawTexturePro()` qual parte da `playerSheet` ela deve desenhar. É aqui que o `sourceRec` se torna dinâmico.
 
@@ -136,7 +138,7 @@ Vamos focar no `sourceRec` alterado:
 
 ***
 
-### Liberando a Mémoria
+### 5. Liberando a Mémoria
 
 Não esqueça de liberar a textura quando o jogo terminar.
 

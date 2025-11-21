@@ -17,6 +17,8 @@ layout:
 
 # Tutorial 7 - Pintando o Sete
 
+### Instalação
+
 Nesta seção, vamos aprender a "pintar" nossos objetos usando uma imagem, um processo conhecido como mapeamento de textura.
 
 Pense nisso como aplicar um papel de parede a uma forma geométrica. A imagem que usamos para isso é chamada de Textura.
@@ -29,7 +31,7 @@ Pense nisso como aplicar um papel de parede a uma forma geométrica. A imagem qu
 
 ***
 
-### Carregando a Textura
+### 1. Carregando a Textura
 
 Assim como as fontes, as texturas vivem em arquivos no disco e precisam ser carregadas para a memória da placa de vídeo (GPU) para serem usadas. Esta operação, que pode ser um pouco lenta, acontece uma única vez, no nosso Bloco de **Inicializacao**.
 
@@ -56,7 +58,7 @@ Vamos entender as novidades:
 
 ***
 
-### Aplicando a Textura
+### 2. Aplicando a Textura
 
 Com nossa "tinta" (textura) pronta, podemos aplicá-la ao nosso objeto a cada frame. Para isso, vamos ao Bloco de Desenho e substituímos a antiga chamada `DrawRectangle()` (Ou qualuer outra figura) pela função `DrawTexture()`.
 
@@ -79,7 +81,7 @@ Vamos detalhar os parâmetros da função `DrawTexture()`:
 
 ***
 
-### Liberando a Memoria
+### 3. Liberando a Memoria
 
 Todo recurso que carregamos deve ser liberado ao final do programa. Isso é crucial para a boa saúde do seu aplicativo.
 
@@ -93,7 +95,7 @@ CloseWindow();
 
 ***
 
-### Codigo Completo e Resultado
+### Código Final
 
 ```c
 #include "raylib.h"

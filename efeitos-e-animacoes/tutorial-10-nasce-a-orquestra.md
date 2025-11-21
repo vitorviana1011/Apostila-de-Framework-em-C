@@ -17,16 +17,20 @@ layout:
 
 # Tutorial 10 - Nasce a Orquestra
 
+### Introdução
+
 Todo bom jogo é acompanhado por uma boa trilha sonora. Essa sessão a tocar arquivos de música longos (como `.mp3` ou `.ogg`) que ficam tocando em _looping_ no fundo do nosso jogo, usando o módulo `raudio`. Usaremos o soco de clique do tutorial anterior como base ainda.
 
-### Antes do Código
+***
+
+### 1. Antes do Código
 
 * Encontre um arquivo de música que você goste. O formato `.mp3` ou `.ogg` é o ideal para _streaming_.
 * Salve o arquivo na sua pasta `recursos` com um nome simples, como `musica_fundo.mp3`.
 
 ***
 
-### Carregando a música
+### 2. Carregando a música
 
 O processo é muito parecido com o de `Sound`, mas usamos funções específicas para `Music`. A inicialização do áudio (`InitAudioDevice`) já deve estar lá do tutorial anterior.
 
@@ -51,7 +55,7 @@ Vamos entender as novidades:
 
 ***
 
-### A Lógica do Streaming
+### 3. A Lógica do Streaming
 
 Esta é a parte mais importante e diferente de usar `Music`. Como a música não está inteira na memória, precisamos dizer à Raylib a cada frame: "Ei, continue lendo o arquivo e mandando os próximos pedaços de áudio para o alto-falante".
 
@@ -69,7 +73,7 @@ Vamos analisar esta linha:
 
 ***
 
-### Hora da Faxina
+### 4. Hora da Faxina
 
 Assim como carregamos, precisamos descarregar.
 

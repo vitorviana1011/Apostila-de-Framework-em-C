@@ -17,11 +17,15 @@ layout:
 
 # Tutorial 9 - Um Lugar Silencioso
 
+### Introdução
+
 Nesta seção, vamos aprender a carregar e tocar Efeitos Sonoros (arquivos curtos, como `.wav` ou `.ogg`) usando o módulo `raudio` da Raylib. O processo é muito parecido com o de texturas: carregar, usar e descarregar.
 
 Para conseguirmos focar no som, usaremos de base nosso Jogo do Clique do Tutorial 6.
 
-### Antes do Código
+***
+
+### 1. Antes do Código
 
 * Encontre um arquivo de som curto que você goste para o "acerto". Pode ser um "blip", "click", "coin", etc. Sites como [freesound.org](https://freesound.org/) são ótimos para isso.
 * O formato `.wav` é o mais recomendado para efeitos sonoros curtos, pois não precisa de decodificação complexa.
@@ -29,7 +33,7 @@ Para conseguirmos focar no som, usaremos de base nosso Jogo do Clique do Tutoria
 
 ***
 
-### Preparando o Som
+### 2. Preparando o Som
 
 Assim como a janela e as texturas, o dispositivo de áudio do seu computador precisa ser inicializado, e o arquivo de som precisa ser carregado do disco para a memória RAM.
 
@@ -74,7 +78,7 @@ Vamos entender as novidades:
 
 ***
 
-### No Tempo Certo
+### 3. No Tempo Certo
 
 Agora, o coração da lógica. Queremos que o som toque no exato momento em que o jogador acerta o alvo. O lugar perfeito para isso é dentro do Bloco de **Lógica**, logo após a colisão ser detectada.
 
@@ -104,7 +108,7 @@ Vamos analisar esta linha:
 
 ***
 
-### Limpando a Mémoria
+### 4. Limpando a Mémoria
 
 Assim como carregamos, precisamos descarregar. Todo `Load` precisa de um `Unload`, e todo `Init` precisa de um `Close`.
 
@@ -120,7 +124,7 @@ CloseWindow();
 
 ***
 
-### Código Final e Resultados
+### Código Final
 
 ```c
 #include "raylib.h"

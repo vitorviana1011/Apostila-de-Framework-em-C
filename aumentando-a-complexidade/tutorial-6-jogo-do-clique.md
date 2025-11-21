@@ -17,7 +17,9 @@ layout:
 
 # Tutorial 6 - Jogo do Clique
 
-Bem-vindo ao nosso primeiro minijogo! Vamos criar um "treinador de mira" simples, onde um alvo (uma bolinha) aparece em locais aleatórios na tela. O objetivo é clicar nele o mais rápido possível para ganhar pontos.
+### Introdução
+
+Bem-vindo ao nosso minijogo! Vamos criar um "treinador de mira" simples, onde um alvo (uma bolinha) aparece em locais aleatórios na tela. O objetivo é clicar nele o mais rápido possível para ganhar pontos.
 
 Este tutorial vai nos ensinar a:
 
@@ -28,7 +30,7 @@ Este tutorial vai nos ensinar a:
 
 ***
 
-### Preparando as Variaveis
+### 1. Preparando as Variaveis
 
 Como sempre, começamos no Bloco de **Inicialização** para configurar nossas variáveis. Precisamos de um círculo para ser o alvo e uma variável para guardar a pontuação.
 
@@ -55,7 +57,7 @@ Vamos entender as variáveis:
 
 ***
 
-### Desenhando a Cena
+### 2. Desenhando a Cena
 
 No Bloco de **Desenho**, vamos renderizar nosso alvo (um círculo vermelho) e a pontuação.
 
@@ -78,7 +80,7 @@ EndDrawing();
 
 ***
 
-### Lógica: Detectando o Clique e Colisão
+### 3. Lógica: Detectando o Clique e Colisão
 
 Agora, o coração do jogo. No Bloco de **Lógica**, precisamos verificar duas coisas a cada frame:
 
@@ -123,7 +125,7 @@ Vamos dissecar essa lógica:
 
 ***
 
-### Código Final e Resultado
+### Código Final
 
 ```c
 #include "raylib.h"

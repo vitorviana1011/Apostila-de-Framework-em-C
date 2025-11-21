@@ -14,7 +14,7 @@
 ## Aumentando a Complexidade
 
 * [Tutorial 4 - Movendo e Colidindo](aumentando-a-complexidade/tutorial-4-movendo-e-colidindo.md)
-* [Tutorial 5 - Esta Tudo Sobre Controle](aumentando-a-complexidade/tutorial-5-esta-tudo-sobre-controle.md)
+* [Tutorial 5 - Está Tudo Sobre Controle](aumentando-a-complexidade/tutorial-5-esta-tudo-sobre-controle.md)
 * [Tutorial 6 - Jogo do Clique](aumentando-a-complexidade/tutorial-6-jogo-do-clique.md)
 
 ## Efeitos e Animações&#x20;

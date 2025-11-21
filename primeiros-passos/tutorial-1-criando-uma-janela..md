@@ -17,9 +17,11 @@ layout:
 
 # Tutorial 1 - Criando uma janela.
 
-Nesse tutorial, voce vai aprender a criar uma janela e escrever nela.
+### Introdução
 
-### Criando a janela
+Nesse tutorial, você vai aprender a criar uma janela e escrever nela.
+
+### 1. Criando a janela
 
 Todo programa Raylib segue uma estrutura muito parecida. Vamos começar com o código mínimo necessário para criar uma janela e mantê-la aberta.
 
@@ -46,7 +48,7 @@ int main(){
 
 Vamos destrinchar o codigo parte por parte:
 
-* `#include "raylib.h"`: Importa a biblioteca raylib e todas as suas funcoes e capacitades para o nosso codigo. Sem ela todo o resto simplesmente nao funciona.
+* `#include "raylib.h"`: Importa a biblioteca raylib e todas as suas funções e capacidades para o nosso código. Sem ela todo o resto simplesmente nõo funciona.
 * `int main()`: Inicializa a main e com ele o nosso programa.
 * `const int screenWidth` e `const int screenHeight`: Constantes que definem o tamanho da nossa janela.
 * `InitWindow(...)`: Esta função "cria" a janela. Ela recebe a largura, a altura e um título.
@@ -60,11 +62,13 @@ Se você compilar e rodar este código, verá uma janela preta que não faz nada
 
 Uma janela vazia não tem graça, entao vamos imcrementar algo, vamos escrever um pequeno texto!
 
-### Escrevendo na janela
+***
 
-Para isso temos que definir 3 fatores importantes:
+### 2. Escrevendo na janela
 
-1. Qual sera o nosso texto?
+Para isso temos que definir três fatores importantes:
+
+1. Qual será o nosso texto?
 2. Onde ele vai ficar?
 3. Qual tamanho ele vai ter?
 
@@ -99,6 +103,10 @@ EndDrawing(); // Termina o desenho da janela
 * `DrawText()`: A função que efetivamente desenha o texto. Ela precisa saber: o quê (`text`), onde (`textPosition.x`, `textPosition.y`), o tamanho (`fontSize`) e a cor (`BLACK`).
 * `EndDrawing()`: Avisa à Raylib: "Terminei de desenhar por agora, pode mostrar o resultado na tela!".
 
+***
+
+### Código Final
+
 Com tudo isso, seu codigo deve ficar assim:
 
 ```c
@@ -131,11 +139,11 @@ int main() {
 }
 ```
 
-E ao compilar e rodar o codigo, voce criou essa janela:
+E ao compilar e rodar o código, você criou essa janela:
 
 <figure><img src="../.gitbook/assets/Captura de tela de 2025-09-16 13-50-22.png" alt=""><figcaption></figcaption></figure>
 
-### Hora de Experimentar!
+#### Hora de Experimentar
 
 Este tutorial é apenas uma orientação. O segredo para aprender é a prática! Pegue o código final e brinque com ele. Aqui ficam algumas ideias:
 

@@ -17,11 +17,13 @@ layout:
 
 # Tutorial 3 - Formas Simples
 
+### Introdução
+
 Nesta seção, vamos aprender a usar as funções do módulo `rshapes` para criar e colorir as formas geométricas básicas. Cada uma delas funciona de uma maneira um pouco diferente, e entender seus parâmetros é a chave para desenhar qualquer coisa que você imaginar. Todo o código que escreveremos a seguir pertence ao Bloco de Desenho, entre as funções `BeginDrawing()` e `EndDrawing()`.
 
 ***
 
-### Passo 1 - Retangulo
+### 1. Retângulo
 
 ```c
 DrawRectangle(50, 70, 100, 60, BLUE);
@@ -37,7 +39,7 @@ Vamos entender cada um dos seus 5 parâmetros:
 
 ***
 
-### Passo 2 - Circulo
+### 2. Circulo
 
 Diferente do retângulo, o círculo não é definido por um canto, mas sim pelo seu centro e pela distância até sua borda.
 
@@ -54,7 +56,7 @@ Analisando os 4 parâmetros:
 
 ***
 
-### Passo 3 - Triangulo
+### 3. Triângulo
 
 O triângulo é a forma mais fundamental da computação gráfica. Ele é definido pelas coordenadas exatas do seus tres vertices.
 
@@ -62,7 +64,7 @@ O triângulo é a forma mais fundamental da computação gráfica. Ele é defini
 DrawTriangle((Vector2){400, 350}, (Vector2){300, 400}, (Vector2){500, 400}, GREEN);
 ```
 
-Analisando os 4 parâmetros:
+Analisando os quatro parâmetros:
 
 * `(Vector2){400, 350}` (Ponto 1): Este é o primeiro vértice. Usamos uma `struct` `Vector2` para agrupar as coordenadas X e Y de um ponto. Este é o vértice de cima do nosso triângulo.
 * `(Vector2){300, 400}` (Ponto 2): O segundo vértice, que ficará na parte inferior esquerda.
@@ -71,7 +73,7 @@ Analisando os 4 parâmetros:
 
 ***
 
-### Passo 4 - Linha
+### 4. Linha
 
 Para desenhar uma linha, precisamos apenas de um ponto inicial e um ponto final.
 
@@ -88,7 +90,7 @@ Analisando os 4 parâmetros:
 
 ***
 
-### Codigo Final
+### Código Final
 
 ```c
 #include "raylib.h"
@@ -132,3 +134,4 @@ O segredo para dominar o desenho é praticar. Tente modificar o código para:
 * Usar outras funções como `DrawEllipse()` (uma elipse) ou `DrawRing()` (um anel/círculo vazado).
 * Tentar desenhar apenas o contorno das formas, usando funções como `DrawRectangleLines()`, `DrawCircleLines()` ou `DrawTriangleLines()`.
 * Desafio: Tente criar um desenho simples combinando as formas. Que tal um boneco de palito, um carro ou uma casa?
+

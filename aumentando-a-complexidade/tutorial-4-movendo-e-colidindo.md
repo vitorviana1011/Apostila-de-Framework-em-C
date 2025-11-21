@@ -17,17 +17,19 @@ layout:
 
 # Tutorial 4 - Movendo e Colidindo
 
+### Introdução
+
 Vamos dar um passo além das formas estáticas. Vamos criar um objeto que se move sozinho e ensiná-lo a interagir com o ambiente, primeiro ricocheteando nas paredes e depois detectando a presença de outros objetos.
 
 ***
 
-### Passo 1 - Ele esta vivo!
+### 1. Ele está vivo!
 
 Nosso primeiro objetivo é fazer um circulo se mover de um lado para o outro da tela, sem intervenção do jogador.
 
 #### Preparando as variaveis
 
-Antes de qualquer coisa, temos que declarar as variaveis que vamos usar. A partir de agora, conforme nossos programas crescem em tamanho vamos separa-los em blocos, esse primeiro bloco sera o bloco de **Inicializacao,** que acontece antes do nosso loop principa&#x6C;**.**
+Antes de qualquer coisa, temos que declarar as variaveis que vamos usar. A partir de agora, conforme nossos programas crescem em tamanho vamos separa-los em blocos. Esse primeiro bloco será o bloco de **Inicialização,** que acontece antes do nosso loop principa&#x6C;**.**
 
 ```c
 // --- Inicializacao ---
@@ -47,12 +49,12 @@ Vamos analisar as novidades:
 * `Vector2 boxPosition`: Armazena a posição atual X e Y da nossa caixa.
 * `Vector2 boxSpeed`: Esta é a grande mudança. Em vez de um único número (`float`), estamos usando um `Vector2` para a velocidade. Isso nos permite controlar a velocidade nos eixos X (`boxSpeed.x`) e Y (`boxSpeed.y`) de forma independente. No momento, a velocidade Y é zero, então o movimento será puramente horizontal.
 
-#### Atualizando a posicao
+#### Atualizando a posição
 
-Fazer o bloco se mover sozinho e bem simples: a cada frame, simplesmente aplicamos a velocidade à posição. Esse passo vai ficar em um bloco dentro do nosso loop principal chamado **Atualizacao da L'ogica.**
+Fazer o bloco se mover sozinho e bem simples: a cada frame, simplesmente aplicamos a velocidade à posição. Esse passo vai ficar em um bloco dentro do nosso loop principal chamado de **Lógica.**
 
 ```c
-// --- Atualização da Lógica ---
+// --- Lógica ---
 boxPosition.x += boxSpeed.x; // Movimento da Caixa
 ```
 
@@ -60,7 +62,7 @@ boxPosition.x += boxSpeed.x; // Movimento da Caixa
 
 #### Desenhando o Movimento
 
-O Bloco de **Desenho** apenas desenha a caixa na sua nova posição, que foi calculada no Bloco de Atualização.
+O Bloco de **Desenho** apenas desenha a caixa na sua nova posição, que foi calculada no Bloco de **Lógica**.
 
 ```c
 // --- Desenho ---
@@ -70,15 +72,15 @@ BeginDrawing();
 EndDrawing();
 ```
 
-Com isso voce vai ter algo assim:
+Com isso você vai ter algo assim:
 
 <figure><img src="../.gitbook/assets/tutorail4.gif" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Passo 2 - Ricochete
+### 2. Ricochete
 
-Do jeito que esta, nossa figura segue em velocidade constante para a direita ate o infinito, saindo da tela. Vamos contornar isso adicionando uma colisao com a borda da janela.
+Do jeito que esta, nossa figura segue em velocidade constante para a direita ate o infinito, saindo da tela. Vamos contornar isso adicionando uma colisão com a borda da janela.
 
 ```c
 // --- Lógica ---
@@ -100,7 +102,7 @@ Vamos entender o que esse novo trecho faz:
 
 <figure><img src="../.gitbook/assets/Design sem nome.gif" alt=""><figcaption></figcaption></figure>
 
-### Passo 3 - Colindo Objetos
+### 3. Colindo Objetos
 
 Agora, vamos adicionar um obstáculo estático e detectar quando nossa caixa em movimento colide com ele.
 
@@ -115,7 +117,7 @@ Rectangle obstacleRec = { 300, 100, 80, 250 }; // Posição e tamanho do obstác
 bool collision = false;
 ```
 
-#### Logica da Colisao
+#### Lógica da Colisão
 
 ```c
 // --- Lógica ---
@@ -158,7 +160,9 @@ Agora, a cor da nossa caixa principal depende do estado da flag `collision`, dan
 
 <figure><img src="../.gitbook/assets/Design sem nome(1).gif" alt=""><figcaption></figcaption></figure>
 
-### Codigo Final
+***
+
+### Código Final
 
 ```c
 #include "raylib.h"

@@ -15,13 +15,15 @@ layout:
     visible: true
 ---
 
-# Tutorial 5 - Esta Tudo Sobre Controle
+# Tutorial 5 - Está Tudo Sobre Controle
 
-Por enquanto fizemos apenas movimentos automaticos em nossas figuras, nesse tutorial quem vai assumir o comando 'e a gente. Mas tambem., todo bom heroi precisa de um nome. Entao vamos dar um nome e controlar nosso figura/personagem nesse tutorial.
+### Introdução
+
+Por enquanto fizemos apenas movimentos automaticos em nossas figuras, nesse tutorial quem vai assumir o comando é a gente. Mas também, todo bom heroi precisa de um nome. Então vamos dar um nome e controlar nosso figura/personagem nesse tutorial.
 
 ***
 
-### Estrutura De Estados e Novas Variaveis
+### 1. Estrutura De Estados e Novas Variáveis
 
 Para fazer isso, vamos separar nosso programa em duas "telas" ou estados: uma para digitar o nome e outra para o jogo em si. Isso nos ensinará a gerenciar diferentes partes de um jogo e a capturar a digitação do teclado letra por letra.
 
@@ -32,10 +34,7 @@ Para gerenciar os estados, primeiro precisamos defini-los. A melhor forma de faz
 // ...
 
 // Definindo os estados do nosso jogo
-typedef enum {
-    STATE_TYPING_NAME,
-    STATE_GAMEPLAY
-} GameScreen;
+typedef enum { STATE_TYPING_NAME, STATE_GAMEPLAY} GameScreen;
 
 // Estado do Jogo
 GameScreen currentScreen = STATE_TYPING_NAME; // Começamos na tela de digitação
@@ -58,7 +57,7 @@ Vamos entender as novidades:
 
 ***
 
-### Como fica a Logica do jogo?
+### 2. Como fica a Logica do jogo?
 
 Agora, a grande mudança. O Bloco de **L'ogica** precisa saber qual lógica executar: a de digitar o nome ou a de mover o jogador. A ferramenta perfeita para isso é o `switch`.
 
@@ -165,7 +164,7 @@ EndDrawing();
 
 ***
 
-### Codigo Final e Resultados
+### Codigo Final
 
 ```c
 #include "raylib.h"
