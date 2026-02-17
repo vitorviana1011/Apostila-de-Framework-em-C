@@ -23,3 +23,7 @@
 * [Tutorial 8 -Animando as Coisas](efeitos-e-animacoes/tutorial-8-animando-as-coisas.md)
 * [Tutorial 9 - Um Lugar Silencioso](efeitos-e-animacoes/tutorial-9-um-lugar-silencioso.md)
 * [Tutorial 10 - Nasce a Orquestra](efeitos-e-animacoes/tutorial-10-nasce-a-orquestra.md)
+
+## Projeto Exemplo
+
+* [Planeta do Tesouro](projeto-exemplo/planeta-do-tesouro.md)

@@ -2,20 +2,6 @@
 description: >-
   Bem-vindo ao nosso guia para seu aprendizado! Use este guia visual para
   entender a progressão dos conteúdos e como cada conceito se conecta.
-layout:
-  width: wide
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
-  metadata:
-    visible: true
 ---
 
 # Trilha de Aprendizagem

@@ -1,20 +1,3 @@
----
-layout:
-  width: wide
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
-  metadata:
-    visible: true
----
-
 # Apostila de Raylib
 
 <h2 align="center">Bem-vindo(a) a apostila de Raylib na linguaguem C!</h2>
@@ -35,4 +18,4 @@ Para visualizar a estrutura completa de todos os tópicos que abordaremos, consu
 
 ***
 
-<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td align="center">Instalacao</td><td><a href="instalacao/">instalacao</a></td><td><a href=".gitbook/assets/20250901_1118_Software Installation Icon_remix_01k42t66nmfqdswgv1069739m9.png">20250901_1118_Software Installation Icon_remix_01k42t66nmfqdswgv1069739m9.png</a></td></tr><tr><td align="center">Arquitetura</td><td><a href="arquitetura-do-raylib.md">arquitetura-do-raylib.md</a></td><td><a href=".gitbook/assets/20250829_1228_Process Flow Diagram_remix_01k3v6z5kjem9811et7j598wgk.png">20250829_1228_Process Flow Diagram_remix_01k3v6z5kjem9811et7j598wgk.png</a></td></tr><tr><td align="center">Tutoriais</td><td><a href="primeiros-passos/tutorial-1-criando-uma-janela..md">tutorial-1-criando-uma-janela..md</a></td><td><a href=".gitbook/assets/20250829_1231_Book on Screen_remix_01k3v748gbepf9v7nqck64xs9t.png">20250829_1231_Book on Screen_remix_01k3v748gbepf9v7nqck64xs9t.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td align="center">Instalacao</td><td><a href="instalacao/">instalacao</a></td><td><a href=".gitbook/assets/20250901_1118_Software Installation Icon_remix_01k42t66nmfqdswgv1069739m9.png">20250901_1118_Software Installation Icon_remix_01k42t66nmfqdswgv1069739m9.png</a></td></tr><tr><td align="center">Arquitetura</td><td><a href="arquitetura-do-raylib.md">arquitetura-do-raylib.md</a></td><td><a href=".gitbook/assets/20250829_1228_Process Flow Diagram_remix_01k3v6z5kjem9811et7j598wgk.png">20250829_1228_Process Flow Diagram_remix_01k3v6z5kjem9811et7j598wgk.png</a></td></tr><tr><td align="center">Tutoriais</td><td><a href="primeiros-passos/tutorial-1-criando-uma-janela..md">tutorial-1-criando-uma-janela..md</a></td><td><a href=".gitbook/assets/20250829_1231_Book on Screen_remix_01k3v748gbepf9v7nqck64xs9t.png">20250829_1231_Book on Screen_remix_01k3v748gbepf9v7nqck64xs9t.png</a></td></tr><tr><td align="center">Projeto de Exemplo</td><td><a href="projeto-exemplo/planeta-do-tesouro.md">planeta-do-tesouro.md</a></td><td><a href=".gitbook/assets/20260217_1356_Image Generation_simple_compose_01khp8f88cebdrscyydq0rw4pf.png">20260217_1356_Image Generation_simple_compose_01khp8f88cebdrscyydq0rw4pf.png</a></td></tr></tbody></table>
